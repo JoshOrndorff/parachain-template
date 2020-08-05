@@ -894,8 +894,8 @@ name = "cumulus-collator"
 version = "0.1.0"
 source = "git+https://github.com/paritytech/cumulus?tag=rococo_v1#a51df009d8bc5a8b58f9790ce0959d45d6fc98ef"
 dependencies = [
- "cumulus-consensus 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "cumulus-network 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
+ "cumulus-consensus",
+ "cumulus-network",
  "cumulus-primitives 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
  "cumulus-runtime 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
  "futures 0.3.5",
@@ -941,48 +941,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "cumulus-consensus"
-version = "0.1.0"
-dependencies = [
- "futures 0.3.5",
- "log 0.4.11",
- "parity-scale-codec",
- "polkadot-primitives",
- "polkadot-runtime",
- "sc-client-api",
- "sp-api",
- "sp-block-builder",
- "sp-blockchain",
- "sp-consensus",
- "sp-core",
- "sp-inherents",
- "sp-runtime",
- "substrate-prometheus-endpoint",
- "tokio 0.1.22",
-]
-
-[[package]]
 name = "cumulus-message-broker"
 version = "0.1.0"
 source = "git+https://github.com/paritytech/cumulus?tag=rococo_v1#a51df009d8bc5a8b58f9790ce0959d45d6fc98ef"
 dependencies = [
  "cumulus-primitives 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "cumulus-upward-message 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "frame-support",
- "frame-system",
- "parity-scale-codec",
- "sp-inherents",
- "sp-io",
- "sp-runtime",
- "sp-std",
-]
-
-[[package]]
-name = "cumulus-message-broker"
-version = "0.1.0"
-dependencies = [
- "cumulus-primitives 0.1.0",
- "cumulus-upward-message 0.1.0",
+ "cumulus-upward-message",
  "frame-support",
  "frame-system",
  "parity-scale-codec",
@@ -1011,31 +975,6 @@ dependencies = [
  "sp-blockchain",
  "sp-consensus",
  "sp-core",
- "sp-runtime",
-]
-
-[[package]]
-name = "cumulus-network"
-version = "0.1.0"
-dependencies = [
- "cumulus-primitives 0.1.0",
- "cumulus-test-runtime",
- "futures 0.3.5",
- "log 0.4.11",
- "parity-scale-codec",
- "parking_lot 0.10.2",
- "polkadot-collator",
- "polkadot-network",
- "polkadot-primitives",
- "polkadot-statement-table",
- "polkadot-test-runtime-client",
- "polkadot-validation",
- "sc-client-api",
- "sp-api",
- "sp-blockchain",
- "sp-consensus",
- "sp-core",
- "sp-keyring",
  "sp-runtime",
 ]
 
@@ -1058,28 +997,6 @@ dependencies = [
  "sp-runtime",
  "sp-std",
  "sp-version",
-]
-
-[[package]]
-name = "cumulus-parachain-upgrade"
-version = "0.1.0"
-dependencies = [
- "cumulus-primitives 0.1.0",
- "cumulus-runtime 0.1.0",
- "frame-support",
- "frame-system",
- "pallet-balances",
- "parity-scale-codec",
- "polkadot-parachain",
- "serde",
- "sp-core",
- "sp-externalities",
- "sp-inherents",
- "sp-io",
- "sp-runtime",
- "sp-std",
- "sp-version",
- "substrate-test-runtime-client",
 ]
 
 [[package]]
@@ -1175,11 +1092,11 @@ dependencies = [
 name = "cumulus-test-parachain-runtime"
 version = "0.1.0"
 dependencies = [
- "cumulus-message-broker 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "cumulus-parachain-upgrade 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
+ "cumulus-message-broker",
+ "cumulus-parachain-upgrade",
  "cumulus-primitives 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
  "cumulus-runtime 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "cumulus-upward-message 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
+ "cumulus-upward-message",
  "frame-executive",
  "frame-support",
  "frame-system",
@@ -1218,19 +1135,6 @@ dependencies = [
 name = "cumulus-upward-message"
 version = "0.1.0"
 source = "git+https://github.com/paritytech/cumulus?tag=rococo_v1#a51df009d8bc5a8b58f9790ce0959d45d6fc98ef"
-dependencies = [
- "kusama-runtime",
- "polkadot-core-primitives",
- "polkadot-parachain",
- "polkadot-runtime",
- "rococo-runtime",
- "sp-std",
- "westend-runtime",
-]
-
-[[package]]
-name = "cumulus-upward-message"
-version = "0.1.0"
 dependencies = [
  "kusama-runtime",
  "polkadot-core-primitives",
@@ -5756,8 +5660,8 @@ dependencies = [
  "ansi_term 0.12.1",
  "assert_cmd",
  "cumulus-collator",
- "cumulus-consensus 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
- "cumulus-network 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
+ "cumulus-consensus",
+ "cumulus-network",
  "cumulus-primitives 0.1.0 (git+https://github.com/paritytech/cumulus?tag=rococo_v1)",
  "cumulus-test-parachain-runtime",
  "derive_more 0.15.0",
