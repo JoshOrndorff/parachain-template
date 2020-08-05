@@ -1,7 +1,5 @@
 [workspace]
 members = [
-	"test/runtime",
-	"test/client",
 	"test/parachain/runtime",
 	"test/parachain/",
 ]

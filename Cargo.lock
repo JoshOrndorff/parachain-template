@@ -1035,21 +1035,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cumulus-test-client"
-version = "0.1.0"
-dependencies = [
- "cumulus-test-runtime",
- "parity-scale-codec",
- "sc-consensus",
- "sc-service",
- "sp-core",
- "sp-keyring",
- "sp-runtime",
- "sp-test-primitives",
- "substrate-test-client",
-]
-
-[[package]]
 name = "cumulus-test-parachain-runtime"
 version = "0.1.0"
 dependencies = [
@@ -1080,15 +1065,6 @@ dependencies = [
  "sp-std",
  "sp-transaction-pool",
  "sp-version",
- "substrate-wasm-builder-runner 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "cumulus-test-runtime"
-version = "0.1.0"
-dependencies = [
- "cumulus-runtime",
- "substrate-test-runtime",
  "substrate-wasm-builder-runner 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -7634,19 +7610,6 @@ dependencies = [
  "serde",
  "sp-debug-derive",
  "sp-std",
-]
-
-[[package]]
-name = "sp-test-primitives"
-version = "2.0.0-rc5"
-source = "git+https://github.com/paritytech/substrate?branch=rococo-branch#270a992bf299cd41b2ed4e211814d2a958e3bfc8"
-dependencies = [
- "parity-scale-codec",
- "parity-util-mem",
- "serde",
- "sp-application-crypto",
- "sp-core",
- "sp-runtime",
 ]
 
 [[package]]
