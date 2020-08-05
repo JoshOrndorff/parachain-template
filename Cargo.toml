@@ -1,0 +1,17 @@
+[workspace]
+members = [
+	"consensus",
+	"message-broker",
+	"network",
+	"parachain-upgrade",
+	"primitives",
+	"runtime",
+	"test/runtime",
+	"test/client",
+	"test/parachain/runtime",
+	"test/parachain/",
+	"upward-message",
+]
+
+[profile.release]
+panic = 'unwind'
