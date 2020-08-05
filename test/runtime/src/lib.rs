@@ -24,4 +24,4 @@ include!(concat!(env!("OUT_DIR"), "/wasm_binary.rs"));
 
 pub use substrate_test_runtime::*;
 
-runtime::register_validate_block!(Block, system::BlockExecutor);
+cumulus_runtime::register_validate_block!(Block, system::BlockExecutor);
