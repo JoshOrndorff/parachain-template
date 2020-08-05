@@ -23,7 +23,7 @@ serde = { version = "1.0.101", features = ["derive"] }
 hex-literal = "0.2.1"
 
 # Parachain dependencies
-parachain-runtime = { package = "cumulus-test-parachain-runtime", path = "runtime" }
+parachain-runtime = { package = "cumulus-test-parachain-runtime", path = "../runtime" }
 
 # Substrate dependencies
 sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "rococo-branch" }
